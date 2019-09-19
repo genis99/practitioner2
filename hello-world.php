@@ -1,2 +1,3 @@
 <?php
-echo "Hola";
+$greeting = "Hola";
+echo $greeting; //sdasd
