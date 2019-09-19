@@ -7,10 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    <?php
-        $name = 'Genis';
-    ?>
-
-    <? "Hola $name!" ?>
+    <?= 'Hola ' . $name ?>
 </body>
 </html>
