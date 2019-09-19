@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <?p
+    <?php
         echo "Hola gent!";
     ?>
 </body>
