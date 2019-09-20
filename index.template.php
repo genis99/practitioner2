@@ -7,6 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <?= 'Hola ' . $name ?>
+    <?php
+        foreach ($clase as $persones) {
+            echo "Hola $persones";
+        }
+    ?>
 </body>
 </html>
