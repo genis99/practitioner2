@@ -1,12 +1,20 @@
 <?php
 
-$name = 'Genís';
-// també vorem el include, són iguals però require peta si no te el fitxer
-require 'index.template.php';
+// ARRAYS/VECTORS
 
-$clase = [
+$classe = [
     'Sergi',
     'Karim',
-    'Ayram',
+    'Joan',
+    'Carlos',
     'Genis',
+    'Ayram',
+    'Gerard',
+    'Dídac'
 ];
+//require 'model.php';
+
+// include i require són però require peta si fitxer no existeix
+// VISTA
+require 'index.template.php';
+

@@ -1,11 +1,16 @@
 <?php
-$greeting = "Hola";
-echo $greeting; //sdasd
+$greeting = 'Hola';
+echo $greeting;
 
-$name = 'Genis';
-//Compte en js és + per concatenar
+$name = 'Sergi';
+//OCO javascript és + CONCATENAR
 echo 'Hola ' . $greeting;
-//Posar normalment cometes simples perque:
+
+//OCO javascript és +
 echo 'Hola $greeting';
 echo "Hola $greeting";
-//Les dobles si que t'agafen la variable
+
+echo "Hola {$greeting}que tal";
+
+
+
