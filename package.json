@@ -1,0 +1,13 @@
+{
+    
+    "devDependencies": {
+        "@babel/cli": "^7.0.0",
+        "@babel/core": "^7.0.0",
+        "@babel/present-env":  "^7.6.0",
+        "laravel-mix": "^5.0.0"
+    },
+    "scripts": {
+        "dev-antic": "babel src -d js",
+        "dev": ""
+    }
+}
