@@ -14,7 +14,7 @@ $classe = [
 ];
 //require 'model.php';
 
-// include i require són però require peta si fitxer no existeix
+// include i require, require peta si el fitxer no existeix
 // VISTA
 require 'index.template.php';
 
