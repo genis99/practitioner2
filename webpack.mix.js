@@ -13,4 +13,3 @@ const mix = require('laravel-mix');
  */
 
 mix.js('src/app.js', 'js')  //laravel diu on tenim el fitxer original i on el vols guardar
-    

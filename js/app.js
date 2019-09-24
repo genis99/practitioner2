@@ -90,30 +90,15 @@
 /*!********************!*\
   !*** ./src/app.js ***!
   \********************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _templates_greeting__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./templates/greeting */ "./src/templates/greeting.js");
 var name = 'Sergi'; //moduls propis o externs, en aquest cas propi
+//import greeting from './templates/greeting'
 
-
-document.body.innerHTML = _templates_greeting__WEBPACK_IMPORTED_MODULE_0__["default"];
-
-/***/ }),
-
-/***/ "./src/templates/greeting.js":
-/*!***********************************!*\
-  !*** ./src/templates/greeting.js ***!
-  \***********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-var template = "\n<h1>Hola ".concat(name, "</h1>\n");
-/* harmony default export */ __webpack_exports__["default"] = (template);
+var greeting = "\n<h1>Hola ".concat(name, "</h1>\n");
+console.log(greeting);
+document.body.innerHTML = greeting;
 
 /***/ }),
 

@@ -1,5 +1,5 @@
-const template = `
+const greeting = `
 <h1>Hola ${name}</h1>
 `
 
-export default template
+export default greeting
