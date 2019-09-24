@@ -3,6 +3,13 @@
 // ESTE FITXER ÉS EL CONTROLADOR
 
 
+//funcions globals
+require 'helpers.php';
+
+dump();
+dd();
+
+
 // MODEL
 require "models/task.php";
 
