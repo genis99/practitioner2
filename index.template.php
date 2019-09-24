@@ -7,18 +7,13 @@
     <title>Document</title>
 </head>
 <body>
+
+
+    <h1><?= $person['fullname'] ?></h1>
     <ul>
-        <!-- 
-        <?php
-        foreach ($classe as $person) {
-            echo "<li>$person</li>";
-            // echo '<li>' . $person . </li>
-        }
-        ?> 
-        -->
-        <?php foreach ($classe as $person): ?>
-            <li><?=$person ?> </li>
-        <?php endforeach;  ?>
+        <li>Nom: <?= $person['name'] ?></li>
+        <li>Cognoms: <?= $person['surnames'] ?></li>
+        <li>Email: <?= $person['email'] ?></li>
     </ul>
 </body>
 </html>

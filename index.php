@@ -1,12 +1,17 @@
 <?php
 
-// ARRAYS/VECTORS
+// ESTE FITXER ÉS EL CONTROLADOR
 
-require "models/llista_classe.php";
 
-//require 'model.php';
+// MODEL
+require "models/person.php";
 
-// include i require, require peta si el fitxer no existeix
+//Array associatiu
+//UNA LLISTA
+//OBJECTE
+
+
+
 // VISTA
 require 'index.template.php';
 
