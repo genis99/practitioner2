@@ -4,7 +4,7 @@
 
 
 // MODEL
-require "models/person.php";
+require "models/task.php";
 
 //Array associatiu
 //UNA LLISTA

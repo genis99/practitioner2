@@ -9,11 +9,19 @@
 <body>
 
 
-    <h1><?= $person['fullname'] ?></h1>
+    <h1><?= $task['name'] ?></h1>
     <ul>
-        <li>Nom: <?= $person['name'] ?></li>
-        <li>Cognoms: <?= $person['surnames'] ?></li>
-        <li>Email: <?= $person['email'] ?></li>
+        <li>Descripció: <?= $task['description'] ?></li>
+        <li>Completada: 
+            <!-- <?php if ($task['completed']):  ?>
+                sí
+            <?php else: ?>
+                no
+            <?php endif; ?> -->
+            <?= $task['completed'] ? 'Sí' : 'No'; ?>
+        </li>
+        
+        
     </ul>
 </body>
 </html>
