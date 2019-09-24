@@ -2,16 +2,8 @@
 
 // ARRAYS/VECTORS
 
-$classe = [
-    'Sergi',
-    'Karim',
-    'Joan',
-    'Carlos',
-    'Genis',
-    'Ayram',
-    'Gerard',
-    'Dídac'
-];
+require "models/llista_classe.php";
+
 //require 'model.php';
 
 // include i require, require peta si el fitxer no existeix

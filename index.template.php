@@ -7,10 +7,18 @@
     <title>Document</title>
 </head>
 <body>
-    <?php
-    foreach ($classe as $person) {
-        echo "Hola $person";
-    }
-    ?>
+    <ul>
+        <!-- 
+        <?php
+        foreach ($classe as $person) {
+            echo "<li>$person</li>";
+            // echo '<li>' . $person . </li>
+        }
+        ?> 
+        -->
+        <?php foreach ($classe as $person): ?>
+            <li><?=$person ?> </li>
+        <?php endforeach;  ?>
+    </ul>
 </body>
 </html>
