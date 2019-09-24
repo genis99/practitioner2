@@ -105,6 +105,27 @@ document.body.innerHTML = greeting;
 
 /***/ }),
 
+/***/ "./src/model.js":
+/*!**********************!*\
+  !*** ./src/model.js ***!
+  \**********************/
+/*! exports provided: name, task */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "name", function() { return name; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "task", function() { return task; });
+var name = 'Sergi';
+var task = {
+  name: 'Comprar pa',
+  description: 'Al lidl',
+  completed: true
+};
+
+
+/***/ }),
+
 /***/ "./src/templates/greeting.js":
 /*!***********************************!*\
   !*** ./src/templates/greeting.js ***!
@@ -115,9 +136,9 @@ document.body.innerHTML = greeting;
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "greeting", function() { return greeting; });
-!(function webpackMissingModule() { var e = new Error("Cannot find module '/../model'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+/* harmony import */ var _model__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../model */ "./src/model.js");
 
-var greeting = "\n<h1>Hola ".concat(!(function webpackMissingModule() { var e = new Error("Cannot find module '/../model'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), "</h1>\n");
+var greeting = "\n<h1>Hola ".concat(_model__WEBPACK_IMPORTED_MODULE_0__["name"], "</h1>\n");
 
 
 /***/ }),
