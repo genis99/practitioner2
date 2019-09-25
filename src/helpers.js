@@ -10,8 +10,13 @@ function suma(x,y) {
     return x+y
 }
 
-export default {
+function multiple(x,y) {
+    return x*y
+}
+
+module.exports = {
     log,
     saludar,
-    suma
+    suma,
+    multiple
 }

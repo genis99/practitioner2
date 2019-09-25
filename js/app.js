@@ -97,14 +97,15 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _templates_task__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./templates/task */ "./src/templates/task.js");
 /* harmony import */ var _helpers_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./helpers.js */ "./src/helpers.js");
+/* harmony import */ var _helpers_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_helpers_js__WEBPACK_IMPORTED_MODULE_1__);
 //moduls propis o externs, en aquest cas propi
 //import greeting from './templates/greeting'
 
 
 document.body.innerHTML = task;
-_helpers_js__WEBPACK_IMPORTED_MODULE_1__["default"].log('prova');
-_helpers_js__WEBPACK_IMPORTED_MODULE_1__["default"].saludar;
-var resultat = _helpers_js__WEBPACK_IMPORTED_MODULE_1__["default"].suma(a, b);
+_helpers_js__WEBPACK_IMPORTED_MODULE_1___default.a.log('prova');
+_helpers_js__WEBPACK_IMPORTED_MODULE_1___default.a.saludar;
+var resultat = _helpers_js__WEBPACK_IMPORTED_MODULE_1___default.a.suma(a, b);
 
 /***/ }),
 
@@ -112,11 +113,9 @@ var resultat = _helpers_js__WEBPACK_IMPORTED_MODULE_1__["default"].suma(a, b);
 /*!************************!*\
   !*** ./src/helpers.js ***!
   \************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 function log(variable) {
   console.log(variable);
 }
@@ -129,11 +128,16 @@ function suma(x, y) {
   return x + y;
 }
 
-/* harmony default export */ __webpack_exports__["default"] = ({
+function multiple(x, y) {
+  return x * y;
+}
+
+module.exports = {
   log: log,
   saludar: saludar,
-  suma: suma
-});
+  suma: suma,
+  multiple: multiple
+};
 
 /***/ }),
 
