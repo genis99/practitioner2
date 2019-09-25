@@ -95,13 +95,45 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _templates_greeting__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./templates/greeting */ "./src/templates/greeting.js");
-var name = 'Sergi'; //moduls propis o externs, en aquest cas propi
+/* harmony import */ var _templates_task__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./templates/task */ "./src/templates/task.js");
+/* harmony import */ var _helpers_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./helpers.js */ "./src/helpers.js");
+//moduls propis o externs, en aquest cas propi
 //import greeting from './templates/greeting'
 
 
-var greeting = "\n<h1>Hola ".concat(name, "</h1>\n");
-document.body.innerHTML = greeting;
+document.body.innerHTML = task;
+_helpers_js__WEBPACK_IMPORTED_MODULE_1__["default"].log('prova');
+_helpers_js__WEBPACK_IMPORTED_MODULE_1__["default"].saludar;
+var resultat = _helpers_js__WEBPACK_IMPORTED_MODULE_1__["default"].suma(a, b);
+
+/***/ }),
+
+/***/ "./src/helpers.js":
+/*!************************!*\
+  !*** ./src/helpers.js ***!
+  \************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function log(variable) {
+  console.log(variable);
+}
+
+function saludar(variable) {
+  console.log('Hello');
+}
+
+function suma(x, y) {
+  return x + y;
+}
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  log: log,
+  saludar: saludar,
+  suma: suma
+});
 
 /***/ }),
 
@@ -126,19 +158,19 @@ var task = {
 
 /***/ }),
 
-/***/ "./src/templates/greeting.js":
-/*!***********************************!*\
-  !*** ./src/templates/greeting.js ***!
-  \***********************************/
-/*! exports provided: greeting */
+/***/ "./src/templates/task.js":
+/*!*******************************!*\
+  !*** ./src/templates/task.js ***!
+  \*******************************/
+/*! exports provided: template */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "greeting", function() { return greeting; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "template", function() { return template; });
 /* harmony import */ var _model__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../model */ "./src/model.js");
 
-var greeting = "\n<h1>Hola ".concat(_model__WEBPACK_IMPORTED_MODULE_0__["name"], "</h1>\n");
+var template = "\n<h1>".concat(_model__WEBPACK_IMPORTED_MODULE_0__["task"].name, "</h1>\n<ul>\n    <li>Descripci\xF3: ").concat(_model__WEBPACK_IMPORTED_MODULE_0__["task"].description, "</li>\n    <li>Completada: ").concat(_model__WEBPACK_IMPORTED_MODULE_0__["task"].completed, "</li>\n</ul>\n");
 
 
 /***/ }),

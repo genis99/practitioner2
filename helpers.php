@@ -1,6 +1,6 @@
 <?php
 
-//DRY -DONT REPEAT YOURSELF  vs  WET WRITE EVERYTHING TWICE
+
 function dump($variable) {
     echo '<pre>';
     var_dump($variable);
@@ -8,8 +8,7 @@ function dump($variable) {
 }
 
 function dd($variable) {
-    echo '<pre>';
+    //DRY -DONT REPEAT YOURSELF  vs  WET WRITE EVERYTHING TWICE
     //die(var_dump($variable));
     die(dump($variable));
-    echo '</pre>';
 }

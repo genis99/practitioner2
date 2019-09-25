@@ -13,11 +13,13 @@
     <ul>
         <li>Descripció: <?= $task['description'] ?></li>
         <li>Completada: 
-            <!-- <?php if ($task['completed']):  ?>
+            <!--
+            <?php if ($task['completed']):  ?>
                 sí
             <?php else: ?>
                 no
-            <?php endif; ?> -->
+            <?php endif; ?>
+            -->
             <?= $task['completed'] ? 'Sí' : 'No'; ?>
         </li>
         

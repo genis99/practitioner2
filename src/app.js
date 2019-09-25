@@ -1,10 +1,10 @@
-const name = 'Sergi'
-
 //moduls propis o externs, en aquest cas propi
 //import greeting from './templates/greeting'
 import {template} from './templates/task'
-
-const greeting = `
-<h1>Hola ${name}</h1>
-`
+import helpers from './helpers.js'
 document.body.innerHTML = task
+
+helpers.log('prova')
+helpers.saludar
+const resultat = helpers.suma(a, b)
+

@@ -6,8 +6,8 @@
 //funcions globals
 require 'helpers.php';
 
-dump();
-dd();
+//dump();
+//dd();
 
 
 // MODEL
