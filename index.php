@@ -1,5 +1,7 @@
 <?php
 
+use App\Controllers\PagesController;
+
 // ESTE FITXER ÉS EL CONTROLADOR
 
 
@@ -17,3 +19,4 @@ require 'models/task.php';
 // VISTA
 require 'index.template.php';
 
+new PagesController();

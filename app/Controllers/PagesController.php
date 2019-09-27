@@ -1,4 +1,7 @@
 <?php
+
+namespace App\Constrollers;
+
 class PagesController {
     
     public function about() {
@@ -9,5 +12,6 @@ class PagesController {
     }
     public function policy() {
         return view('policy');
+ 
     }
 }
