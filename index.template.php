@@ -9,18 +9,11 @@
 <body>
 
 
-    <h1><?= $task['name'] ?></h1>
+    <h1><?= $task->name ?></h1>
     <ul>
-        <li>Descripció: <?= $task['description'] ?></li>
+        <li>Descripció: <?= $task->description ?></li>
         <li>Completada: 
-            <!--
-            <?php if ($task['completed']):  ?>
-                sí
-            <?php else: ?>
-                no
-            <?php endif; ?>
-            -->
-            <?= $task['completed'] ? 'Sí' : 'No'; ?>
+            <?= $task->completed ? 'Sí' : 'No'; ?>
         </li>
         
         

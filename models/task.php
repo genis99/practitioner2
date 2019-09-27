@@ -1,6 +1,8 @@
 <?php
 
-$pdo = new PDO('mysql:host=127.0.0.1;dbname=tasks','debian-sys-maint','pJwHgTEAdNJipLlU');
+$query = new QueryBuilder(Connection::make());
+$results = $query->selectAll('tasks');
+$task = $results[1];  //Tria la id de la BBDD
 
 // $task = [
 //     'name' => 'Comprar llet',
