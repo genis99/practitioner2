@@ -2,7 +2,7 @@
 
 $query = new QueryBuilder(Connection::make());
 $results = $query->selectAll('tasks');
-$task = $results[1];  //Tria la id de la BBDD
+$task = $results[0];  //Tria la id de la BBDD
 
 // $task = [
 //     'name' => 'Comprar llet',
